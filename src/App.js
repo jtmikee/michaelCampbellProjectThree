@@ -33,8 +33,22 @@ function App() {
 
   }, []);
 
+  // input onChange handler
+  const handleChange = (event) => {
+    setTextInput(event.target.value)
+  }
+  //form onsubmit handler 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const databaseRef = firebase.database().ref();
+    databaseRef.push(textInput);
+    setTextInput("")
+  }
 
-
+  const handleClick = (commentKey) => {
+    const databaseRef = firebase.database().ref();
+    databaseRef.child(commentKey).remove();
+  }
 
 
 
@@ -45,18 +59,30 @@ function App() {
   return (
     <div className="App">
 
+      <form action="" onSubmit={handleSubmit}>
+        <label htmlFor="leaveComment">Displaying All Comments</label>
+        <input type="text" id="leaveComment" value={textInput} onChange={handleChange}/>
+        <button>Add Comment</button>
+      </form>
+
 
       {/* map through commentsArray */}
       <ul className="commentSection">
         {
           commentsArray.map((comment) => {
             return (
+              <>
               <li key={comment.commentsKey}>
                 {comment.userComment}
               </li>
+              <button onClick={ () => {handleClick(comment.key)}}>Delete Comment</button>
+              </>
             )
           })
         }
+        <li>Comment One</li>
+        <li>Comment Two</li>
+        <li>Comment Three</li>
 
       </ul>
       
