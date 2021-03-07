@@ -4,6 +4,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+body {
+  font-size: 62.5%;
+}
+
 .App {
   background-color: grey;
 }
@@ -60,7 +64,63 @@ main {
 
 .leftSection {
   width: 40%;
+  margin-left: 20px;
 }
+
+/* PROFILE INFORMATION */
+
+.profileInformation {
+  display: flex;
+}
+
+.profileInformation div {
+  margin: auto 0;
+  padding-left: 10px;
+  font-family: Noto Sans;
+  font-size: 0.8rem;
+
+}
+
+.profileInformation p:nth-of-type(1) {
+  margin-top: 90px;
+}
+
+.profileInformation p:nth-of-type(6) {
+  padding-top: 80px;
+}
+
+ /* VIEW MEDIA */
+
+ .viewMedia {
+   display: flex;
+   font-family: Noto Sans;
+   font-size: 0.8rem;
+   width: 160px;
+   margin-top: 10px;
+   margin-left: 20px;
+ }
+
+ .viewMedia a {
+   margin: 0 5px 0 5px;
+   text-decoration: none;
+ }
+
+ .viewMedia a:nth-of-type(2)::before {
+   content: '|';
+   height: 100%;
+   width: 100%;
+   margin-right: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
 
 .rightSection {
   width: 60%;

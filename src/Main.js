@@ -7,19 +7,20 @@ const Main = () => {
 		<main>
 			<section className="leftSection">
 				<h1>Michael</h1>
-				<div>
-					<img src="" alt="" />
+				<div className="profileInformation">
+					<img src="http://placekitten.com/200/300" alt="Profile Picture" />
 					<div>
 						<p>He/Him</p>
 						<p>28 years old</p>
-						<p>TORONTO, Ontario</p>
+						<p>Toronto,</p>
+						<p>Ontario</p>
 						<p>Canada</p>
 						<img src="http://www.myspacegens.com/images/online_now/onlinenow.gif" alt="Online Now" />
 						<p>Last Login:</p>
 						<p>8/24/2008</p>
 					</div>
 				</div>
-				<div>
+				<div className="viewMedia">
 					<p>View My:</p>
 					<a href="#">Pics</a>
 					<a href="#">Videos</a>
