@@ -1,37 +1,70 @@
 //Main.js
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAddressBook, faArrowsAltV, faBookmark, faComment, faEnvelope, faShare, faUserPlus, faUsers, faUserTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Main = () => {
 	return (
 		<main>
-			<section>
+			<section className="leftSection">
 				<h1>Michael</h1>
 				<div>
-					<img src="" alt=""/>
+					<img src="" alt="" />
 					<div>
 						<p>He/Him</p>
 						<p>28 years old</p>
 						<p>TORONTO, Ontario</p>
 						<p>Canada</p>
-						<img src="http://www.myspacegens.com/images/online_now/131.gif" alt="Online Now"/>
+						<img src="http://www.myspacegens.com/images/online_now/onlinenow.gif" alt="Online Now" />
 						<p>Last Login:</p>
 						<p>8/24/2008</p>
 					</div>
 				</div>
 				<div>
-				<p>View My:</p>
-				<a href="#">Pics</a>
-				<a href="#">Videos</a>
+					<p>View My:</p>
+					<a href="#">Pics</a>
+					<a href="#">Videos</a>
 				</div>
 				<div>
 					<h3></h3>
-					<a href="#">Send Message</a>
-					<a href="#">Forward to Friend</a>
-					<a href="#">Add to Friends</a>
-					<a href="#">Add to Favourites</a>
-					<a href="#">IM / Call</a>
-					<a href="#">Block User</a>
-					<a href="#">Add to Group</a>
-					<a href="#">Rank User</a>
+					<div>
+						<FontAwesomeIcon icon={faEnvelope} />
+						<a href="#">Send Message</a>
+					</div>
+
+					<div>
+						<FontAwesomeIcon icon={faShare} />
+						<a href="#">Forward to Friend</a>
+					</div>
+
+					<div>
+						<FontAwesomeIcon icon={faUserPlus} />
+						<a href="#">Add to Friends</a>
+					</div>
+
+					<div>
+						<FontAwesomeIcon icon={faBookmark} />
+						<a href="#">Add to Favourites</a>
+					</div>
+
+					<div>
+						<FontAwesomeIcon icon={faComment} />
+						<a href="#">IM / Call</a>
+					</div>
+
+					<div>
+						<FontAwesomeIcon icon={faUserTimes} />
+						<a href="#">Block User</a>
+					</div>
+
+					<div>
+						<FontAwesomeIcon icon={faUsers} />
+						<a href="#">Add to Group</a>
+					</div>
+
+					<div>
+						<FontAwesomeIcon icon={faArrowsAltV} />
+						<a href="#">Rank User</a>
+					</div>
 				</div>
 				<div>
 					<h3>MyPlace URL:</h3>
@@ -39,7 +72,7 @@ const Main = () => {
 				</div>
 			</section>
 
-			<section>
+			<section className="rightSection">
 				<h2>Michael is in your extended network</h2>
 				<div>
 					<p>Michael's Latest Blog Entry</p>
@@ -59,37 +92,37 @@ const Main = () => {
 						<div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 1"/>
+								<img src="#" alt="Top Friend 1" />
 							</div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 2"/>
+								<img src="#" alt="Top Friend 2" />
 							</div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 3"/>
+								<img src="#" alt="Top Friend 3" />
 							</div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 4"/>
+								<img src="#" alt="Top Friend 4" />
 							</div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 5"/>
+								<img src="#" alt="Top Friend 5" />
 							</div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 6"/>
+								<img src="#" alt="Top Friend 6" />
 							</div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 7"/>
+								<img src="#" alt="Top Friend 7" />
 							</div>
 							<div>
 								<h4>Friend</h4>
-								<img src="#" alt="Top Friend 8"/>
+								<img src="#" alt="Top Friend 8" />
 							</div>
-							
+
 						</div>
 					</div>
 				</div>

@@ -52,6 +52,20 @@ nav a:hover, a:active {
 
 }
 
+/* MAIN */
+
+main {
+  display: flex;
+}
+
+.leftSection {
+  width: 40%;
+}
+
+.rightSection {
+  width: 60%;
+}
+
 
 
 
