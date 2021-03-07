@@ -4,21 +4,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-body{
+.App {
   background-color: grey;
 }
 
-.App {
+.wrapper {
   width: 90vw;
   height: 100vh;
   margin: 0 auto;
   background-color: white;
-
 }
 
 /* Navigation */
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -29,7 +29,7 @@ nav {
 nav a {
   text-decoration: none;
   color: white;
-  padding: 0 10px;
+  padding: 0 10px 0 15px;
   border-left: 1px solid black;
   font-family: Noto Sans;
   text-decoration: underline transparent;

@@ -2,13 +2,17 @@ import './App.css';
 import firebase from './firebase.js'
 import { useState, useEffect } from 'react';
 import Navigation from './Navigation.js'
+import Main from './Main.js'
+
+
+
 function App() {
 
   //setup empty comments array in state
-  const [ commentsArray, setCommentsArray ] = useState([]);
+  const [commentsArray, setCommentsArray] = useState([]);
 
   //setup state for the text input for the comments 
-  const [ textInput, setTextInput ] = useState("");
+  const [textInput, setTextInput] = useState("");
 
   //setup useEffect for database
   useEffect(() => {
@@ -58,35 +62,40 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation/>
-
-      <form action="" onSubmit={handleSubmit}>
-        <label htmlFor="leaveComment">Displaying All Comments</label>
-        <input type="text" id="leaveComment" value={textInput} onChange={handleChange}/>
-        <button>Add Comment</button>
-      </form>
+      <Navigation />
 
 
-      {/* map through commentsArray */}
-      <ul className="commentSection">
-        {
-          commentsArray.map((comment) => {
-            return (
-              <>
-              <li key={comment.commentsKey}>
-                {comment.userComment}
-              </li>
-              <button onClick={ () => {handleClick(comment.key)}}>Delete Comment</button>
-              </>
-            )
-          })
-        }
-        <li>Comment One</li>
-        <li>Comment Two</li>
-        <li>Comment Three</li>
+      <div className="wrapper">
+      <Main/>
 
-      </ul>
-      
+        <form action="" onSubmit={handleSubmit}>
+          <label htmlFor="leaveComment">Displaying All Comments</label>
+          <input type="text" id="leaveComment" value={textInput} onChange={handleChange} />
+          <button>Add Comment</button>
+        </form>
+
+
+        {/* map through commentsArray */}
+        <ul className="commentSection">
+          {
+            commentsArray.map((comment) => {
+              return (
+                <>
+                  <li key={comment.commentsKey}>
+                    {comment.userComment}
+                  </li>
+                  <button onClick={() => { handleClick(comment.key) }}>Delete Comment</button>
+                </>
+              )
+            })
+          }
+          <li>Comment One</li>
+          <li>Comment Two</li>
+          <li>Comment Three</li>
+
+        </ul>
+
+      </div>
     </div>
   );
 }
