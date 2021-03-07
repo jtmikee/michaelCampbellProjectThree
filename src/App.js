@@ -1,7 +1,7 @@
 import './App.css';
 import firebase from './firebase.js'
 import { useState, useEffect } from 'react';
-
+import Navigation from './Navigation.js'
 function App() {
 
   //setup empty comments array in state
@@ -58,6 +58,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navigation/>
 
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="leaveComment">Displaying All Comments</label>
