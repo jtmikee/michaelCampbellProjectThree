@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-  width: 90vw;
+  width: 80vw;
   height: 100vh;
   margin: 0 auto;
   background-color: white;
@@ -73,7 +73,7 @@ main {
 .leftSection h1 {
   font-size: 1rem;
   font-weight: bold;
-  padding: 5px 5px 5px 0;
+  padding: 10px 5px 5px 0;
 }
 
 .profileInformation {
@@ -156,6 +156,7 @@ main {
 
  .faIcons {
    margin-right: 5px;
+   color: #d85803;
  }
 
  /* URL */
@@ -189,19 +190,144 @@ main {
    text-decoration: underline;
  }
 
+ /* REACT PLAYER */
+
+ .reactPlayer {
+   margin-top: 20px;
+ }
 
 
-
-
-
-
-
-
+ /* RIGHT SECTION */
 
 .rightSection {
   width: 60%;
 }
 
+.rightSection h2 {
+  width: 500px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 30px;
+  border: 2px solid black;
+}
 
+/* BLOG */
 
+.blogSection {
+  display: flex;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+.blogSection p {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.blogSection a {
+  text-decoration: none;
+}
+
+.viewBlog {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+.viewBlog a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.blogSection span, .viewBlog span {
+  color: black;
+}
+
+/* ABOUT ME */
+
+.aboutMeSection {
+  margin-top: 20px;
+}
+
+.aboutMeSection h3 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #FABD7E;
+  color: #d85803;
+  height: 15px;
+  width: 500px;
+  padding-left: 10px;
+}
+
+.aboutMe {
+  width: 500px;
+}
+
+.aboutMe h4 {
+  font-weight: bold;
+  color: #d85803;
+  margin-top: 10px;
+}
+
+.aboutMe h4, p {
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+/* TOP FRIENDS */
+
+.topFriends {
+  margin-top: 20px;
+}
+
+.topFriends p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.topFriends span {
+  color: #d85803; 
+}
+
+.topEight {
+  margin-top: 10px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100px;
+  row-gap: 10px;
+  justify-items: center;
+  text-align: center;
+}
+
+/* COMMENTS */
+
+.commentSection {
+  margin-top: 20px;
+}
+
+.commentSection h3 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #FABD7E;
+  color: #d85803;
+  height: 15px;
+  width: 500px;
+  padding-left: 10px;
+}
+
+.commentSection form {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentSection input {
+  width: 500px;
+  height: 100px;
+}
+
+.commentSection button {
+  width: 500px;
+}
 
