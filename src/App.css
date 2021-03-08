@@ -6,6 +6,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 body {
   font-size: 62.5%;
+  font-family: Noto Sans;
 }
 
 .App {
@@ -32,10 +33,10 @@ nav {
 
 nav a {
   text-decoration: none;
+  font-size: 0.8rem;
   color: white;
   padding: 0 10px 0 15px;
   border-left: 1px solid black;
-  font-family: Noto Sans;
   text-decoration: underline transparent;
   transition: all 0.7s ease;
   
@@ -69,6 +70,12 @@ main {
 
 /* PROFILE INFORMATION */
 
+.leftSection h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 5px 5px 0;
+}
+
 .profileInformation {
   display: flex;
 }
@@ -76,7 +83,6 @@ main {
 .profileInformation div {
   margin: auto 0;
   padding-left: 10px;
-  font-family: Noto Sans;
   font-size: 0.8rem;
 
 }
@@ -93,16 +99,19 @@ main {
 
  .viewMedia {
    display: flex;
-   font-family: Noto Sans;
    font-size: 0.8rem;
-   width: 160px;
+   width: 200px;
    margin-top: 10px;
-   margin-left: 20px;
+ }
+
+ .viewMedia a:first-of-type {
+   margin-left: 10px;
  }
 
  .viewMedia a {
    margin: 0 5px 0 5px;
    text-decoration: none;
+   color: #070791;
  }
 
  .viewMedia a:nth-of-type(2)::before {
@@ -112,6 +121,73 @@ main {
    margin-right: 10px;
  }
 
+ /* CONTACT MENU*/
+
+ .contactMenu {
+  border: 2px solid #6F9DCE;
+  width: 285px;
+  height: 150px;
+  margin-top: 10px;
+ }
+
+ .contactMenu h3 {
+   font-size: 0.8rem;
+   font-weight: bold;
+   color: white;
+   background-color: #6F9DCE;
+   height: 15px;
+   padding-left: 10px;
+ }
+
+ .menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30px 30px 30px;
+  font-size: 0.8rem;
+  margin-left: 12px;
+  margin-top: 10px;
+
+ }
+
+ .menu a {
+   text-decoration: none;
+   color: #070791;
+ }
+
+ .faIcons {
+   margin-right: 5px;
+ }
+
+ /* URL */
+
+ .urlContainer {
+   display: flex;
+   flex-direction: column;
+   width: 285px;
+   height: auto;
+   border: 2px solid #6F9DCE;
+   margin-top: 20px;
+   padding: 2px 0 5px 0;
+  }
+  
+  .urlContainer h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .urlContainer a {
+    font-size: 0.8rem;
+    margin: 5px 0 0 5px;
+    text-decoration: none;
+    text-decoration: underline transparent;
+    color: #070791;
+    transition: all 0.3s ease;
+ }
+
+ .urlContainer a:hover, a:active {
+   text-decoration: underline;
+ }
 
 
 

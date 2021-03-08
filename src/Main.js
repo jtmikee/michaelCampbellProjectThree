@@ -25,49 +25,51 @@ const Main = () => {
 					<a href="#">Pics</a>
 					<a href="#">Videos</a>
 				</div>
-				<div>
-					<h3></h3>
-					<div>
-						<FontAwesomeIcon icon={faEnvelope} />
-						<a href="#">Send Message</a>
-					</div>
+				<div className="contactMenu">
+					<h3>Contacting Michael</h3>
+					<div className="menu">
+						<div>
+							<FontAwesomeIcon icon={faEnvelope} className="faIcons" />
+							<a href="#">Send Message</a>
+						</div>
 
-					<div>
-						<FontAwesomeIcon icon={faShare} />
-						<a href="#">Forward to Friend</a>
-					</div>
+						<div>
+							<FontAwesomeIcon icon={faShare} className="faIcons" />
+							<a href="#">Forward to Friend</a>
+						</div>
 
-					<div>
-						<FontAwesomeIcon icon={faUserPlus} />
-						<a href="#">Add to Friends</a>
-					</div>
+						<div>
+							<FontAwesomeIcon icon={faUserPlus} className="faIcons" />
+							<a href="#">Add to Friends</a>
+						</div>
 
-					<div>
-						<FontAwesomeIcon icon={faBookmark} />
-						<a href="#">Add to Favourites</a>
-					</div>
+						<div>
+							<FontAwesomeIcon icon={faBookmark} className="faIcons" />
+							<a href="#">Add to Favourites</a>
+						</div>
 
-					<div>
-						<FontAwesomeIcon icon={faComment} />
-						<a href="#">IM / Call</a>
-					</div>
+						<div>
+							<FontAwesomeIcon icon={faComment} className="faIcons" />
+							<a href="#">IM / Call</a>
+						</div>
 
-					<div>
-						<FontAwesomeIcon icon={faUserTimes} />
-						<a href="#">Block User</a>
-					</div>
+						<div>
+							<FontAwesomeIcon icon={faUserTimes} className="faIcons" />
+							<a href="#">Block User</a>
+						</div>
 
-					<div>
-						<FontAwesomeIcon icon={faUsers} />
-						<a href="#">Add to Group</a>
-					</div>
+						<div>
+							<FontAwesomeIcon icon={faUsers} className="faIcons" />
+							<a href="#">Add to Group</a>
+						</div>
 
-					<div>
-						<FontAwesomeIcon icon={faArrowsAltV} />
-						<a href="#">Rank User</a>
+						<div>
+							<FontAwesomeIcon icon={faArrowsAltV} className="faIcons" />
+							<a href="#">Rank User</a>
+						</div>
 					</div>
 				</div>
-				<div>
+				<div className="urlContainer">
 					<h3>MyPlace URL:</h3>
 					<a href="#">http://www.myplace.com/michaelcampbell</a>
 				</div>

@@ -62,10 +62,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation />
 
 
       <div className="wrapper">
+      <Navigation />
       <Main/>
 
         <form action="" onSubmit={handleSubmit}>
