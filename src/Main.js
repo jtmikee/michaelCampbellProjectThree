@@ -1,16 +1,12 @@
 //Main.js
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowsAltV, faBookmark, faComment, faEnvelope, faShare, faUserPlus, faUsers, faUserTimes } from '@fortawesome/free-solid-svg-icons'
+import { faArrowsAltV, faBookmark, faComment, faEnvelope, faShare, faUserPlus, faUsers, faUserTimes, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 import firebase from './firebase.js'
 import { useState, useEffect } from 'react';
+import guest from './assets/guest.png'
 
-
-const randomNumber = () => {
-	return (
-		Math.floor(Math.random() * 500) + 8)
-}
 
 
 const Main = () => {
@@ -159,7 +155,7 @@ const Main = () => {
 					</div>
 					<div className="topFriends">
 						<h3>Michaels Friends Space</h3>
-						<p>Michael has <span>{randomNumber()}</span> friends</p>
+						<p>Michael has <span>248</span> friends</p>
 						<div className="topEight">
 							<div>
 								<h4>Friend</h4>
@@ -202,29 +198,35 @@ const Main = () => {
 					<form action="" onSubmit={handleSubmit}>
 						<label htmlFor="leaveComment">Displaying All Comments</label>
 						<div>
-						<input type="text" id="leaveComment" value={textInput} onChange={handleChange} />
-						<button>Add Comment</button>
+							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" value={textInput} onChange={handleChange}></textarea>
+							{/* <input type="text" id="leaveComment" value={textInput} onChange={handleChange} /> */}
+							<button className="addButton">Add Comment</button>
 						</div>
 					</form>
 
 
 					{/* map through commentsArray */}
-					<ul className="commentSection">
+					<ul className="userCommentSection">
+						<div className="userComment">
+							<img src={guest} alt="guest photo" />
+							<li>Omg Michael!! I love your page! You're so handsome and funny 💕💕💕💕💕💕💕 PS #FreeBritney 🌹</li>
+						</div>
 						{
 							commentsArray.map((comment) => {
 								return (
 									<>
-										<li key={comment.commentsKey}>
-											{comment.userComment}
-										</li>
-										<button onClick={() => { handleClick(comment.key) }}>Delete Comment</button>
+										<div className="userComment">
+											<img src={guest} alt="" />
+											<li key={comment.commentsKey}>
+												{comment.userComment}
+											</li>
+										<button className="removeButton" onClick={() => { handleClick(comment.key) }}><FontAwesomeIcon icon={faTrashAlt} className="faIcons" /></button>
+										</div>
 									</>
 								)
 							})
 						}
-						<li>Comment One</li>
-						<li>Comment Two</li>
-						<li>Comment Three</li>
+
 
 					</ul>
 				</div>
