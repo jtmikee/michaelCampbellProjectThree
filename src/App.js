@@ -1,6 +1,4 @@
 import './App.css';
-import firebase from './firebase.js'
-import { useState, useEffect } from 'react';
 import Navigation from './Navigation.js'
 import Main from './Main.js'
 
