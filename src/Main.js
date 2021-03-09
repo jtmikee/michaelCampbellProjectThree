@@ -68,7 +68,7 @@ const Main = () => {
 			<section className="leftSection">
 				<h1>Michael</h1>
 				<div className="profileInformation">
-					<img src="http://placekitten.com/200/300" alt="Profile Picture" />
+					<img src="http://placekitten.com/200/300" alt="Profile" />
 					<div>
 						<p>He/Him</p>
 						<p>28 years old</p>
@@ -208,7 +208,7 @@ const Main = () => {
 					{/* map through commentsArray */}
 					<ul className="userCommentSection">
 						<div className="userComment">
-							<img src={guest} alt="guest photo" />
+							<img src={guest} alt="guest" />
 							<li>Omg Michael!! I love your page! You're so handsome and funny 💕💕💕💕💕💕💕 PS #FreeBritney 🌹</li>
 						</div>
 						{
