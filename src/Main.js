@@ -82,56 +82,56 @@ const Main = () => {
 				</div>
 				<div className="viewMedia">
 					<p>View My:</p>
-					<a href="#">Pics</a>
-					<a href="#">Videos</a>
+					<a href="www.google.ca">Pics</a>
+					<a href="www.google.ca">Videos</a>
 				</div>
 				<div className="contactMenu">
 					<h3>Contacting Michael</h3>
 					<div className="menu">
 						<div>
 							<FontAwesomeIcon icon={faEnvelope} className="faIcons" />
-							<a href="#">Send Message</a>
+							<a href="www.google.ca">Send Message</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faShare} className="faIcons" />
-							<a href="#">Forward to Friend</a>
+							<a href="www.google.ca">Forward to Friend</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faUserPlus} className="faIcons" />
-							<a href="#">Add to Friends</a>
+							<a href="www.google.ca">Add to Friends</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faBookmark} className="faIcons" />
-							<a href="#">Add to Favourites</a>
+							<a href="www.google.ca">Add to Favourites</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faComment} className="faIcons" />
-							<a href="#">IM / Call</a>
+							<a href="www.google.ca">IM / Call</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faUserTimes} className="faIcons" />
-							<a href="#">Block User</a>
+							<a href="www.google.ca">Block User</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faUsers} className="faIcons" />
-							<a href="#">Add to Group</a>
+							<a href="www.google.ca">Add to Group</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faArrowsAltV} className="faIcons" />
-							<a href="#">Rank User</a>
+							<a href="www.google.ca">Rank User</a>
 						</div>
 					</div>
 				</div>
 				<div className="urlContainer">
 					<h3>MyPlace URL:</h3>
-					<a href="#">http://www.myplace.com/michaelcampbell</a>
+					<a href="www.google.ca">http://www.myplace.com/michaelcampbell</a>
 				</div>
 				<ReactPlayer className="reactPlayer" url='https://www.youtube.com/watch?v=u4FF6MpcsRw' width='285px' height='250px' />
 			</section>
@@ -140,10 +140,10 @@ const Main = () => {
 				<h2>Michael is in your extended network</h2>
 				<div className="blogSection">
 					<p>Michael's Latest Blog Entry</p>
-					<a href="#"><span>[</span>Subscribe to this Blog<span>]</span></a>
+					<a href="www.google.ca"><span>[</span>Subscribe to this Blog<span>]</span></a>
 				</div>
 				<div className="viewBlog">
-					<a href="#"><span>[</span>View All Blog Entries<span>]</span></a>
+					<a href="www.google.ca"><span>[</span>View All Blog Entries<span>]</span></a>
 				</div>
 				<div className="aboutMeSection">
 					<h3>Michael's Blurbs</h3>
