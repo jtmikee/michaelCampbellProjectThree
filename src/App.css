@@ -25,7 +25,7 @@ body {
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
   background-color: #6F9DCE;
   padding: 10px 25px;
@@ -35,12 +35,14 @@ nav a {
   text-decoration: none;
   font-size: 0.8rem;
   color: white;
-  padding: 0 10px 0 15px;
+  padding: 0 10px 0 35px;
   border-left: 1px solid black;
   text-decoration: underline transparent;
   transition: all 0.7s ease;
+  position: relative;
   
 }
+
 
 nav a:first-of-type {
   padding-left: 0;
@@ -86,6 +88,13 @@ main {
   font-size: 0.8rem;
 
 }
+
+.profilePhoto {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
 
 .profileInformation p:nth-of-type(1) {
   margin-top: 90px;
@@ -293,14 +302,26 @@ main {
 }
 
 .topEight {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 500px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 100px;
-  row-gap: 10px;
+  gap: 30px 0;
   justify-items: center;
   text-align: center;
+}
+
+.topEight h4 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.topEight img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 /* COMMENTS */

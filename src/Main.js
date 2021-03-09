@@ -6,6 +6,17 @@ import ReactPlayer from 'react-player/youtube'
 import firebase from './firebase.js'
 import { useState, useEffect } from 'react';
 import guest from './assets/guest.png'
+import alyssa from './assets/alyssa.jpg'
+import christina from './assets/christina.jpg'
+import kyra from './assets/kyra.jpg'
+import lauren from './assets/lauren.jpg'
+import hannah from './assets/hannah.jpg'
+import katie from './assets/katie.jpg'
+import amanda from './assets/amanda.jpg'
+import ehsan from './assets/ehsan.jpg'
+import michael1 from './assets/michael1.jpg'
+import michael2 from './assets/michael2.jpg'
+
 
 
 
@@ -68,7 +79,7 @@ const Main = () => {
 			<section className="leftSection">
 				<h1>Michael</h1>
 				<div className="profileInformation">
-					<img src="http://placekitten.com/200/300" alt="Profile" />
+					<img className="profilePhoto" src={michael2} alt="Profile" />
 					<div>
 						<p>He/Him</p>
 						<p>28 years old</p>
@@ -158,36 +169,36 @@ const Main = () => {
 						<p>Michael has <span>248</span> friends</p>
 						<div className="topEight">
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 1" />
+								<h4>Ehsan</h4>
+								<img src={ehsan} alt="Top Friend 1" />
 							</div>
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 2" />
+								<h4>Alyssa</h4>
+								<img src={alyssa} alt="Top Friend 2" />
 							</div>
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 3" />
+								<h4>Hannah</h4>
+								<img src={hannah} alt="Top Friend 3" />
 							</div>
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 4" />
+								<h4>Lauren</h4>
+								<img src={lauren} alt="Top Friend 4" />
 							</div>
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 5" />
+								<h4>Christina</h4>
+								<img src={christina} alt="Top Friend 5" />
 							</div>
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 6" />
+								<h4>Kyra</h4>
+								<img src={kyra} alt="Top Friend 6" />
 							</div>
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 7" />
+								<h4>Amanda</h4>
+								<img src={amanda} alt="Top Friend 7" />
 							</div>
 							<div>
-								<h4>Friend</h4>
-								<img src="http://placekitten.com/100/100" alt="Top Friend 8" />
+								<h4>Katie</h4>
+								<img src={katie} alt="Top Friend 8" />
 							</div>
 
 						</div>
