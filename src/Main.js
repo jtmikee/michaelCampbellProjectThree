@@ -14,7 +14,6 @@ import hannah from './assets/hannah.jpg'
 import katie from './assets/katie.jpg'
 import amanda from './assets/amanda.jpg'
 import ehsan from './assets/ehsan.jpg'
-import michael1 from './assets/michael1.jpg'
 import michael2 from './assets/michael2.jpg'
 
 
