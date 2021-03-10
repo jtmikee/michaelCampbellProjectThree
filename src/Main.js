@@ -93,56 +93,56 @@ const Main = () => {
 				</div>
 				<div className="viewMedia">
 					<p>View My:</p>
-					<a href="www.google.ca">Pics</a>
-					<a href="www.google.ca">Videos</a>
+					<a href="https://unsplash.com/s/photos/chihuahua">Pics</a>
+					<a href="https://www.youtube.com/watch?v=1cpU0S_4wRI">Videos</a>
 				</div>
 				<div className="contactMenu">
 					<h3>Contacting Michael</h3>
 					<div className="menu">
 						<div>
 							<FontAwesomeIcon icon={faEnvelope} className="faIcons" />
-							<a href="www.google.ca">Send Message</a>
+							<a href="#comment">Send Message</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faShare} className="faIcons" />
-							<a href="www.google.ca">Forward to Friend</a>
+							<a href="#comment">Forward to Friend</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faUserPlus} className="faIcons" />
-							<a href="www.google.ca">Add to Friends</a>
+							<a href="#comment">Add to Friends</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faBookmark} className="faIcons" />
-							<a href="www.google.ca">Add to Favourites</a>
+							<a href="#comment">Add to Favourites</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faComment} className="faIcons" />
-							<a href="www.google.ca">IM / Call</a>
+							<a href="#comment">IM / Call</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faUserTimes} className="faIcons" />
-							<a href="www.google.ca">Block User</a>
+							<a href="#comment">Block User</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faUsers} className="faIcons" />
-							<a href="www.google.ca">Add to Group</a>
+							<a href="#comment">Add to Group</a>
 						</div>
 
 						<div>
 							<FontAwesomeIcon icon={faArrowsAltV} className="faIcons" />
-							<a href="www.google.ca">Rank User</a>
+							<a href="#comment">Rank User</a>
 						</div>
 					</div>
 				</div>
 				<div className="urlContainer">
-					<h3>MyPlace URL:</h3>
-					<a href="www.google.ca">http://www.myplace.com/michaelcampbell</a>
+					<h3>My URL:</h3>
+					<a href="https://codelikemike.dev/">https://codelikemike.dev</a>
 				</div>
 				<ReactPlayer className="reactPlayer" url='https://www.youtube.com/watch?v=u4FF6MpcsRw' width='285px' height='250px' />
 			</section>
@@ -151,18 +151,33 @@ const Main = () => {
 				<h2>Michael is in your extended network</h2>
 				<div className="blogSection">
 					<p>Michael's Latest Blog Entry</p>
-					<a href="www.google.ca"><span>[</span>Subscribe to this Blog<span>]</span></a>
+					<a href="https://jtmikee.medium.com/"><span>[</span>Subscribe to this Blog<span>]</span></a>
 				</div>
 				<div className="viewBlog">
-					<a href="www.google.ca"><span>[</span>View All Blog Entries<span>]</span></a>
+					<a href="https://jtmikee.medium.com/the-climb-242056929537"><span>[</span>View All Blog Entries<span>]</span></a>
 				</div>
 				<div className="aboutMeSection">
 					<h3>Michael's Blurbs</h3>
 					<div className="aboutMe">
 						<h4>About me:</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed pariatur qui eaque aliquam culpa rerum sunt, dolore quod facilis!</p>
+						<p>My name is Michael and I'm a Front End Web Developer! 💻 Currently attending Juno College and I'm apart of Cohort 31. I have a chihuahua named Chai who has claimed me as her life partner. I wanted to recreate a MySpace page for myself to soothe my nostalgic itch I constantly have. <span>Click around</span> and find some of the things I've created or things I enjoy.  </p>
 						<h4>Who I'd like to meet:</h4>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos minima id quidem, tempore cupiditate quo excepturi tempora repellat obcaecati?</p>
+						<p className="rainbow">You!! <span>Please leave a comment down below.</span> Let me know what you think of my page, any recommendations of your favourite things, your favourite nostalgic memory or anything else you'd like.
+						<span> </span>
+						<span className="red">K</span>
+						<span className="orange">E</span>
+						<span className="yellow">E</span>
+						<span className="green">P</span>
+						<span> </span>
+						<span className="blue">I</span>
+						<span className="indigo">T</span>
+						<span> </span>
+						<span className="blue">K</span>
+						<span className="green">I</span>
+						<span className="yellow">N</span>
+						<span className="orange">D</span>
+						<span className="red">!</span>
+						 ⭐️ </p>
 					</div>
 					<div className="topFriends">
 						<h3>Michaels Friends Space</h3>
@@ -204,7 +219,7 @@ const Main = () => {
 						</div>
 					</div>
 				</div>
-				<div className="commentSection">
+				<div className="commentSection" id="comment">
 					<h3>Michaels Comments</h3>
 					<form action="" onSubmit={handleSubmit}>
 						<label htmlFor="leaveComment">Displaying All Comments</label>

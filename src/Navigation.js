@@ -3,15 +3,14 @@
 const Navigation = () => {
 	return (
 		<nav>
-			<a href="www.google.ca">Home</a>
-			<a href="www.google.ca">Search</a>
-			<a href="www.google.ca">Invite</a>
-			<a href="www.google.ca">Mail</a>
-			<a href="www.google.ca">Blog</a>
-			<a href="www.google.ca">Groups</a>
-			<a href="www.google.ca">Events</a>
-			<a href="www.google.ca">Videos</a>
-			<a href="www.google.ca">Music</a>
+			<a href="https://michael-project-three.netlify.app/">Home</a>
+			<a href="https://www.google.ca">Search</a>
+			<a href="https://gmail.com">Mail</a>
+			<a href="https://jtmikee.medium.com/">Blog</a>
+			<a href="https://www.the519.org/about">Groups</a>
+			<a href="https://junocollege.com/events/">Events</a>
+			<a href="https://www.youtube.com/user/DaNelleWeedemandReap">Videos</a>
+			<a href="https://www.youtube.com/watch?v=3imO7PFU5cI">Music</a>
 		</nav>
 	)
 }
