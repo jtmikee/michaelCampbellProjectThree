@@ -66,91 +66,106 @@ const Main = () => {
 		const databaseRef = firebase.database().ref();
 		databaseRef.child(commentKey).remove();
 	}
-	
+
 
 
 
 	return (
 		<main>
 			<section className="leftSection">
-				<h1>Michael</h1>
-				<div className="profileInformation">
-					<img className="profilePhoto" src={michael2} alt="Profile" />
+				<div className="menuFlex">
 					<div>
-						<p>He/Him</p>
-						<p>28 years old</p>
-						<p>Toronto,</p>
-						<p>Ontario</p>
-						<p>Canada</p>
-						<img src="http://www.myspacegens.com/images/online_now/onlinenow.gif" alt="Online Now" />
-						<p>Last Login:</p>
-						<p>8/24/2008</p>
-					</div>
-				</div>
-				<div className="viewMedia">
-					<p>View My:</p>
-					<a href="https://unsplash.com/s/photos/chihuahua">Pics</a>
-					<a href="https://www.youtube.com/watch?v=1cpU0S_4wRI">Videos</a>
-				</div>
-				<div className="contactMenu">
-					<h3>Contacting Michael</h3>
-					<div className="menu">
-						<div>
-							<FontAwesomeIcon icon={faEnvelope} className="faIcons" />
-							<a href="#comment">Send Message</a>
+					<h1>Michael</h1>
+					<div className="profileFlex">
+						<div className="profileInformation">
+							<img className="profilePhoto" src={michael2} alt="Profile" />
+							<div>
+								<p>He/Him</p>
+								<p>28 years old</p>
+								<p>Toronto,</p>
+								<p>Ontario</p>
+								<p>Canada</p>
+								<img src="http://www.myspacegens.com/images/online_now/onlinenow.gif" alt="Online Now" />
+								<p>Last Login:</p>
+								<p>8/24/2008</p>
+							</div>
 						</div>
-
-						<div>
-							<FontAwesomeIcon icon={faShare} className="faIcons" />
-							<a href="#comment">Forward to Friend</a>
 						</div>
-
-						<div>
-							<FontAwesomeIcon icon={faUserPlus} className="faIcons" />
-							<a href="#comment">Add to Friends</a>
-						</div>
-
-						<div>
-							<FontAwesomeIcon icon={faBookmark} className="faIcons" />
-							<a href="#comment">Add to Favourites</a>
-						</div>
-
-						<div>
-							<FontAwesomeIcon icon={faComment} className="faIcons" />
-							<a href="#comment">IM / Call</a>
-						</div>
-
-						<div>
-							<FontAwesomeIcon icon={faUserTimes} className="faIcons" />
-							<a href="#comment">Block User</a>
-						</div>
-
-						<div>
-							<FontAwesomeIcon icon={faUsers} className="faIcons" />
-							<a href="#comment">Add to Group</a>
-						</div>
-
-						<div>
-							<FontAwesomeIcon icon={faArrowsAltV} className="faIcons" />
-							<a href="#comment">Rank User</a>
+						<div className="viewMedia">
+							<p>View My:</p>
+							<a href="https://unsplash.com/s/photos/chihuahua">Pics</a>
+							<a href="https://www.youtube.com/watch?v=1cpU0S_4wRI">Videos</a>
 						</div>
 					</div>
+					<div>
+					<div>
+					<h2 className="mediaHeader">Michael is in your extended network</h2>
+						<div className="contactMenu">
+							<h3>Contacting Michael</h3>
+							<div className="menu">
+								<div>
+									<FontAwesomeIcon icon={faEnvelope} className="faIcons" />
+									<a href="#comment">Send Message</a>
+								</div>
+
+								<div>
+									<FontAwesomeIcon icon={faShare} className="faIcons" />
+									<a href="#comment">Forward to Friend</a>
+								</div>
+
+								<div>
+									<FontAwesomeIcon icon={faUserPlus} className="faIcons" />
+									<a href="#comment">Add to Friends</a>
+								</div>
+
+								<div>
+									<FontAwesomeIcon icon={faBookmark} className="faIcons" />
+									<a href="#comment">Add to Favourites</a>
+								</div>
+
+								<div>
+									<FontAwesomeIcon icon={faComment} className="faIcons" />
+									<a href="#comment">IM / Call</a>
+								</div>
+
+								<div>
+									<FontAwesomeIcon icon={faUserTimes} className="faIcons" />
+									<a href="#comment">Block User</a>
+								</div>
+
+								<div>
+									<FontAwesomeIcon icon={faUsers} className="faIcons" />
+									<a href="#comment">Add to Group</a>
+								</div>
+
+								<div>
+									<FontAwesomeIcon icon={faArrowsAltV} className="faIcons" />
+									<a href="#comment">Rank User</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="urlContainer">
+						<h3>My URL:</h3>
+						<a href="https://codelikemike.dev/">https://codelikemike.dev</a>
+					</div>
 				</div>
-				<div className="urlContainer">
-					<h3>My URL:</h3>
-					<a href="https://codelikemike.dev/">https://codelikemike.dev</a>
 				</div>
-				<ReactPlayer className="reactPlayer" url='https://www.youtube.com/watch?v=u4FF6MpcsRw' width='285px' height='250px' />
+				<div className="reactPlayerContainer">
+					<ReactPlayer className="reactPlayer" url='https://www.youtube.com/watch?v=u4FF6MpcsRw' width='100%' height='100%' />
+				</div>
 			</section>
 
 			<section className="rightSection">
 				<h2>Michael is in your extended network</h2>
+				<div className="mediaBlog">
 				<div className="blogSection">
 					<p>Michael's Latest Blog Entry</p>
 					<a href="https://jtmikee.medium.com/"><span>[</span>Subscribe to this Blog<span>]</span></a>
 				</div>
 				<div className="viewBlog">
 					<a href="https://jtmikee.medium.com/the-climb-242056929537"><span>[</span>View All Blog Entries<span>]</span></a>
+				</div>
 				</div>
 				<div className="aboutMeSection">
 					<h3>Michael's Blurbs</h3>
@@ -220,7 +235,7 @@ const Main = () => {
 					<form action="" onSubmit={handleSubmit}>
 						<label htmlFor="leaveComment">Displaying All Comments</label>
 						<div>
-							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" maxlength="200" value={textInput} onChange={handleChange}></textarea>
+							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" maxLength="200" value={textInput} onChange={handleChange}></textarea>
 							{/* <input type="text" id="leaveComment" value={textInput} onChange={handleChange} /> */}
 							<button className="addButton">Add Comment</button>
 						</div>
@@ -247,7 +262,7 @@ const Main = () => {
 												{comment.userComment}
 											</li>
 
-											
+
 										</div>
 										<div className="date">
 											<p>{date.toDateString()}</p>
