@@ -67,10 +67,7 @@ const Main = () => {
 		const databaseRef = firebase.database().ref();
 		databaseRef.child(commentKey).remove();
 	}
-
-
-
-
+	
 
 
 
@@ -164,19 +161,19 @@ const Main = () => {
 						<h4>Who I'd like to meet:</h4>
 						<p className="rainbow">You!! <span>Please leave a comment down below.</span> Let me know what you think of my page, any recommendations of your favourite things, your favourite nostalgic memory or anything else you'd like.
 						<span> </span>
-						<span className="red">K</span>
-						<span className="orange">E</span>
-						<span className="yellow">E</span>
-						<span className="green">P</span>
-						<span> </span>
-						<span className="blue">I</span>
-						<span className="indigo">T</span>
-						<span> </span>
-						<span className="blue">K</span>
-						<span className="green">I</span>
-						<span className="yellow">N</span>
-						<span className="orange">D</span>
-						<span className="red">!</span>
+							<span className="red">K</span>
+							<span className="orange">E</span>
+							<span className="yellow">E</span>
+							<span className="green">P</span>
+							<span> </span>
+							<span className="blue">I</span>
+							<span className="indigo">T</span>
+							<span> </span>
+							<span className="blue">K</span>
+							<span className="green">I</span>
+							<span className="yellow">N</span>
+							<span className="orange">D</span>
+							<span className="red">!</span>
 						 ⭐️ </p>
 					</div>
 					<div className="topFriends">
@@ -224,7 +221,7 @@ const Main = () => {
 					<form action="" onSubmit={handleSubmit}>
 						<label htmlFor="leaveComment">Displaying All Comments</label>
 						<div>
-							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" value={textInput} onChange={handleChange}></textarea>
+							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" maxlength="200" value={textInput} onChange={handleChange}></textarea>
 							{/* <input type="text" id="leaveComment" value={textInput} onChange={handleChange} /> */}
 							<button className="addButton">Add Comment</button>
 						</div>
@@ -237,17 +234,27 @@ const Main = () => {
 							<img src={guest} alt="guest" />
 							<li>Omg Michael!! I love your page! You're so handsome and funny 💕💕💕💕💕💕💕 PS #FreeBritney 🌹</li>
 						</div>
+						<div>
+							<p className="firstDate">Wed Mar 10 2021</p>
+						</div>
 						{
 							commentsArray.map((comment) => {
+								const date = new Date();
 								return (
 									<>
 										<div className="userComment">
-											<img src={guest} alt="" />
+											<img src={guest} alt="guest" />
 											<li key={comment.commentsKey}>
 												{comment.userComment}
 											</li>
-										<button className="removeButton" onClick={() => { handleClick(comment.key) }}><FontAwesomeIcon icon={faTrashAlt} className="faIcons" /></button>
+
+											
 										</div>
+										<div className="date">
+											<p>{date.toDateString()}</p>
+											<button className="removeButton" onClick={() => { handleClick(comment.key) }}><FontAwesomeIcon icon={faTrashAlt} className="faIcons" /></button>
+										</div>
+
 									</>
 								)
 							})

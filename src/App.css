@@ -421,9 +421,10 @@ main {
 }
 
 .userComment img {
+  /* width: 75px; */
   width: 75px;
-  height: 75px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   background-color: white;
   border-right: 2px solid #6F9DCE;
 }
@@ -452,8 +453,34 @@ main {
   word-wrap: break-word;
   background-color: white;
   border: 2px solid #6F9DCE;
-  margin: 2px 0 2px 0;
+  margin: 2px 0 0 0;
 }
+
+.firstDate {
+  width: 480px;
+  height: 27px;
+  border: 2px solid #6F9DCE;
+  border-top: 0;
+  text-align: center;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #6F9DCE;
+  border-top: 0;
+  width: 480px;
+}
+
+.date p {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 5px;
+  text-align: center;
+}
+
 
 /* FOOTER */
 
