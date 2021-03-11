@@ -235,7 +235,7 @@ const Main = () => {
 					<form action="" onSubmit={handleSubmit}>
 						<label htmlFor="leaveComment">Displaying All Comments</label>
 						<div>
-							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" maxLength="200" value={textInput} onChange={handleChange}></textarea>
+							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" maxLength="200" required value={textInput} onChange={handleChange}></textarea>
 							{/* <input type="text" id="leaveComment" value={textInput} onChange={handleChange} /> */}
 							<button className="addButton">Add Comment</button>
 						</div>
