@@ -452,11 +452,14 @@ main {
 }
 
 .removeButton {
-  width: 30px;
+  width: 50px;
   height: 25px;
   font-size: 1rem;
-  align-self: center;
-  padding: 0;
+}
+
+.faIconsRemove {
+  color: #d85803;
+  text-align: center;
 }
 
 .userComment {

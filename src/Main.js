@@ -266,7 +266,7 @@ const Main = () => {
 										</div>
 										<div className="date">
 											<p>{date.toDateString()}</p>
-											<button className="removeButton" onClick={() => { handleClick(comment.key) }}><FontAwesomeIcon icon={faTrashAlt} className="faIcons" /></button>
+											<button className="removeButton" onClick={() => { handleClick(comment.key) }}><FontAwesomeIcon icon={faTrashAlt} className="faIconsRemove" /></button>
 										</div>
 
 									</>
