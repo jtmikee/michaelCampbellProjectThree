@@ -788,6 +788,7 @@ footer a {
 
   .commentSection {
     width: 100%;
+    margin-top: 20px;
   }
 
   .userCommentSection {
