@@ -75,21 +75,21 @@ const Main = () => {
 			<section className="leftSection">
 				<div className="menuFlex">
 					<div className="topFlex">
-					<h1>Michael</h1>
-					<div className="profileFlex">
-						<div className="profileInformation">
-							<img className="profilePhoto" src={michael2} alt="Profile" />
-							<div>
-								<p>He/Him</p>
-								<p>28 years old</p>
-								<p>Toronto,</p>
-								<p>Ontario</p>
-								<p>Canada</p>
-								<img src="http://www.myspacegens.com/images/online_now/onlinenow.gif" alt="Online Now" />
-								<p>Last Login:</p>
-								<p>8/24/2008</p>
+						<h1>Michael</h1>
+						<div className="profileFlex">
+							<div className="profileInformation">
+								<img className="profilePhoto" src={michael2} alt="Profile" />
+								<div>
+									<p>He/Him</p>
+									<p>28 years old</p>
+									<p>Toronto,</p>
+									<p>Ontario</p>
+									<p>Canada</p>
+									<img src="http://www.myspacegens.com/images/online_now/onlinenow.gif" alt="Online Now" />
+									<p>Last Login:</p>
+									<p>8/24/2008</p>
+								</div>
 							</div>
-						</div>
 						</div>
 						<div className="viewMedia">
 							<p>View My:</p>
@@ -98,58 +98,58 @@ const Main = () => {
 						</div>
 					</div>
 					<div className="contactFlex">
-					<div>
-					<h2 className="mediaHeader">Michael is in your extended network</h2>
-						<div className="contactMenu">
-							<h3>Contacting Michael</h3>
-							<div className="menu">
-								<div>
-									<FontAwesomeIcon icon={faEnvelope} className="faIcons" />
-									<a href="#comment">Send Message</a>
-								</div>
+						<div>
+							<h2 className="mediaHeader">Michael is in your extended network</h2>
+							<div className="contactMenu">
+								<h3>Contacting Michael</h3>
+								<div className="menu">
+									<div>
+										<FontAwesomeIcon icon={faEnvelope} className="faIcons" />
+										<a href="#comment">Send Message</a>
+									</div>
 
-								<div>
-									<FontAwesomeIcon icon={faShare} className="faIcons" />
-									<a href="#comment">Forward to Friend</a>
-								</div>
+									<div>
+										<FontAwesomeIcon icon={faShare} className="faIcons" />
+										<a href="#comment">Forward to Friend</a>
+									</div>
 
-								<div>
-									<FontAwesomeIcon icon={faUserPlus} className="faIcons" />
-									<a href="#comment">Add to Friends</a>
-								</div>
+									<div>
+										<FontAwesomeIcon icon={faUserPlus} className="faIcons" />
+										<a href="#comment">Add to Friends</a>
+									</div>
 
-								<div>
-									<FontAwesomeIcon icon={faBookmark} className="faIcons" />
-									<a href="#comment">Add to Favourites</a>
-								</div>
+									<div>
+										<FontAwesomeIcon icon={faBookmark} className="faIcons" />
+										<a href="#comment">Add to Favourites</a>
+									</div>
 
-								<div>
-									<FontAwesomeIcon icon={faComment} className="faIcons" />
-									<a href="#comment">IM / Call</a>
-								</div>
+									<div>
+										<FontAwesomeIcon icon={faComment} className="faIcons" />
+										<a href="#comment">IM / Call</a>
+									</div>
 
-								<div>
-									<FontAwesomeIcon icon={faUserTimes} className="faIcons" />
-									<a href="#comment">Block User</a>
-								</div>
+									<div>
+										<FontAwesomeIcon icon={faUserTimes} className="faIcons" />
+										<a href="#comment">Block User</a>
+									</div>
 
-								<div>
-									<FontAwesomeIcon icon={faUsers} className="faIcons" />
-									<a href="#comment">Add to Group</a>
-								</div>
+									<div>
+										<FontAwesomeIcon icon={faUsers} className="faIcons" />
+										<a href="#comment">Add to Group</a>
+									</div>
 
-								<div>
-									<FontAwesomeIcon icon={faArrowsAltV} className="faIcons" />
-									<a href="#comment">Rank User</a>
+									<div>
+										<FontAwesomeIcon icon={faArrowsAltV} className="faIcons" />
+										<a href="#comment">Rank User</a>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div className="urlContainer">
+							<h3>My URL:</h3>
+							<a href="https://codelikemike.dev/">https://codelikemike.dev</a>
+						</div>
 					</div>
-					<div className="urlContainer">
-						<h3>My URL:</h3>
-						<a href="https://codelikemike.dev/">https://codelikemike.dev</a>
-					</div>
-				</div>
 				</div>
 				<div className="reactPlayerContainer">
 					<ReactPlayer className="reactPlayer" url='https://www.youtube.com/watch?v=u4FF6MpcsRw' width='100%' height='100%' />
@@ -159,13 +159,13 @@ const Main = () => {
 			<section className="rightSection">
 				<h2>Michael is in your extended network</h2>
 				<div className="mediaBlog">
-				<div className="blogSection">
-					<p>Michael's Latest Blog Entry</p>
-					<a href="https://jtmikee.medium.com/"><span>[</span>Subscribe to this Blog<span>]</span></a>
-				</div>
-				<div className="viewBlog">
-					<a href="https://jtmikee.medium.com/the-climb-242056929537"><span>[</span>View All Blog Entries<span>]</span></a>
-				</div>
+					<div className="blogSection">
+						<p>Michael's Latest Blog Entry</p>
+						<a href="https://jtmikee.medium.com/"><span>[</span>Subscribe to this Blog<span>]</span></a>
+					</div>
+					<div className="viewBlog">
+						<a href="https://jtmikee.medium.com/the-climb-242056929537"><span>[</span>View All Blog Entries<span>]</span></a>
+					</div>
 				</div>
 				<div className="aboutMeSection">
 					<h3>Michael's Blurbs</h3>
@@ -178,11 +178,10 @@ const Main = () => {
 							<span className="red">K</span>
 							<span className="orange">E</span>
 							<span className="yellow">E</span>
-							<span className="green">P</span>
-							<span> </span>
+							<span className="green">P </span>
 							<span className="blue">I</span>
-							<span className="indigo">T</span>
-							<span> </span>
+							<span className="indigo">T </span>
+
 							<span className="blue">K</span>
 							<span className="green">I</span>
 							<span className="yellow">N</span>
@@ -193,50 +192,48 @@ const Main = () => {
 					<div className="topFriends">
 						<h3>Michaels Friends Space</h3>
 						<p>Michael has <span>248</span> friends</p>
-						<div className="topEight">
-							<div>
+						<ul className="topEight">
+							<li>
 								<h4>Ehsan</h4>
 								<img src={ehsan} alt="Top Friend 1" />
-							</div>
-							<div>
+							</li>
+							<li>
 								<h4>Alyssa</h4>
 								<img src={alyssa} alt="Top Friend 2" />
-							</div>
-							<div>
+							</li>
+							<li>
 								<h4>Hannah</h4>
 								<img src={hannah} alt="Top Friend 3" />
-							</div>
-							<div>
+							</li>
+							<li>
 								<h4>Lauren</h4>
 								<img src={lauren} alt="Top Friend 4" />
-							</div>
-							<div>
+							</li>
+							<li>
 								<h4>Christina</h4>
 								<img src={christina} alt="Top Friend 5" />
-							</div>
-							<div>
+							</li>
+							<li>
 								<h4>Kyra</h4>
 								<img src={kyra} alt="Top Friend 6" />
-							</div>
-							<div>
+							</li>
+							<li>
 								<h4>Amanda</h4>
 								<img src={amanda} alt="Top Friend 7" />
-							</div>
-							<div>
+							</li>
+							<li>
 								<h4>Katie</h4>
 								<img src={katie} alt="Top Friend 8" />
-							</div>
-
-						</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div className="commentSection" id="comment">
 					<h3>Michaels Comments</h3>
-					<form action="" onSubmit={handleSubmit}>
+					<form onSubmit={handleSubmit}>
 						<label htmlFor="leaveComment">Displaying All Comments</label>
 						<div>
 							<textarea placeholder="Leave me a comment!" type="text" name="leaveComment" id="leaveComment" cols="30" rows="10" maxLength="200" required value={textInput} onChange={handleChange}></textarea>
-							{/* <input type="text" id="leaveComment" value={textInput} onChange={handleChange} /> */}
 							<button className="addButton">Add Comment</button>
 						</div>
 					</form>
