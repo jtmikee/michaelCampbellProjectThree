@@ -718,9 +718,9 @@ footer a {
 
 @media (max-width: 530px) {
 
-  /* main {
+  main {
     overflow-x: hidden
-  } */
+  }
 
   .navHide {
     display: none;
