@@ -93,7 +93,7 @@ const Main = () => {
 						</div>
 						<div className="viewMedia">
 							<p>View My:</p>
-							<a href="https://unsplash.com/s/photos/chihuahua">Pics</a>
+							<a href="https://instagram.com/campbell_mikey">Pics</a>
 							<a href="https://www.youtube.com/watch?v=1cpU0S_4wRI">Videos</a>
 						</div>
 					</div>
