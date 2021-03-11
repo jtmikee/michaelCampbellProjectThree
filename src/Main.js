@@ -74,7 +74,7 @@ const Main = () => {
 		<main>
 			<section className="leftSection">
 				<div className="menuFlex">
-					<div>
+					<div className="topFlex">
 					<h1>Michael</h1>
 					<div className="profileFlex">
 						<div className="profileInformation">
@@ -97,7 +97,7 @@ const Main = () => {
 							<a href="https://www.youtube.com/watch?v=1cpU0S_4wRI">Videos</a>
 						</div>
 					</div>
-					<div>
+					<div className="contactFlex">
 					<div>
 					<h2 className="mediaHeader">Michael is in your extended network</h2>
 						<div className="contactMenu">
@@ -171,7 +171,7 @@ const Main = () => {
 					<h3>Michael's Blurbs</h3>
 					<div className="aboutMe">
 						<h4>About me:</h4>
-						<p>My name is Michael and I'm a Front End Web Developer! 💻 Currently attending Juno College and I'm apart of Cohort 31. I have a chihuahua named Chai who has claimed me as her life partner. I wanted to recreate a MySpace page for myself to soothe my nostalgic itch I constantly have. <span>Click around</span> and find some of the things I've created or things I enjoy.  </p>
+						<p>My name is Michael and I'm a Front End Web Developer! 💻 Currently attending Juno College and I'm apart of Cohort 31. I have a chihuahua named Chai who has claimed me as her life partner. I created a MySpace page for myself to soothe the nostalgic itch I constantly have. <span>Click around</span> and find some of the things I've created or things I enjoy.  </p>
 						<h4>Who I'd like to meet:</h4>
 						<p className="rainbow">You!! <span>Please leave a comment down below.</span> Let me know what you think of my page, any recommendations of your favourite things, your favourite nostalgic memory or anything else you'd like.
 						<span> </span>

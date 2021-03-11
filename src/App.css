@@ -64,12 +64,10 @@ nav a:hover, a:active {
 main {
   display: flex;
   max-width: 100%;
-  overflow: hidden;
 }
 
 .leftSection {
   width: 40%;
-  margin-left: 20px;
 }
 
 /* PROFILE INFORMATION */
@@ -77,11 +75,12 @@ main {
 .leftSection h1 {
   font-size: 1rem;
   font-weight: bold;
-  padding: 10px 5px 5px 0;
+  padding: 10px 5px 5px 20px;
 }
 
 .profileInformation {
   display: flex;
+  padding-left: 20px;
 }
 
 .profileInformation div {
@@ -112,9 +111,10 @@ main {
  .viewMedia {
    display: flex;
    font-size: 0.8rem;
-   width: 200px;
+   width: 250px;
    margin-top: 20px;
    margin-bottom: 20px;
+   padding-left: 35px;
  }
 
  .viewMedia a:first-of-type {
@@ -136,6 +136,10 @@ main {
 
  /* CONTACT MENU*/
 
+ .mediaHeader {
+   visibility: hidden;
+ }
+
  .contactMenu {
   border: 2px solid #6F9DCE;
   width: 285px;
@@ -150,6 +154,10 @@ main {
    background-color: #6F9DCE;
    height: 15px;
    padding-left: 10px;
+ }
+
+ .contactFlex {
+   padding-left: 20px;
  }
 
  .menu {
@@ -207,6 +215,7 @@ main {
  .reactPlayerContainer {
    width: 285px;
    height: 200px;
+   margin-left: 20px;
  }
 
  .reactPlayer {
@@ -217,7 +226,7 @@ main {
  /* RIGHT SECTION */
 
 .rightSection {
-  min-width: 60%;
+  width: 60%;
 }
 
 .rightSection h2 {
@@ -426,7 +435,6 @@ main {
 }
 
 .userComment img {
-  /* width: 75px; */
   width: 75px;
   height: 100%;
   object-fit: cover;
@@ -523,7 +531,6 @@ footer a {
 
   .leftSection {
     width: 100%;
-    margin-left: 20px;
   }
 
   /* PROFILE INFORMATION */
@@ -534,14 +541,14 @@ footer a {
 
   .profileInformation {
     width: 300px;
-    /* margin: 0 auto; */
   }
 
   .profileFlex {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
   }
 
   /* VIEW MEDIA */
@@ -557,13 +564,17 @@ footer a {
     border: 2px solid black;
   }
 
+  .mediaHeader {
+    visibility: visible;
+  }
+
 
   /* CONTACT MENU DONE */ 
 
   .menuFlex {
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .contactMenu {
@@ -588,8 +599,8 @@ footer a {
 
   .reactPlayerContainer {
     width: 90%;
-    height: 300px;
-    margin-left: 20px;
+    height: 400px;
+    margin: 0 auto;
   }
 
   .rightSection {
@@ -602,10 +613,215 @@ footer a {
   }
 
   .mediaBlog {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
     display: flex;
     margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .mediaBlog p {
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  .mediaBlog a {
+    margin-right: 30px;
+  }
+
+  .blogSection {
+    margin: 0 auto;
+  }
+
+  .viewBlog {
+    margin-top: 10px;
   }
 
 
 }
+
+@media (max-width: 940px) {
+  /* VIEW MEDIA */
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .menuFlex {
+    justify-content: center;
+  }
+
+  .contactFlex {
+    padding: 0;
+  }
+
+  .rightSection {
+    width: 100%;
+  }
+
+  .aboutMeSection {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .commentSection {
+    width: 500px;
+    margin: 10px auto;
+  }
+
+
+
+}
+
+@media (max-width: 774px) {
+
+  
+  nav a {
+    padding: 0 20px 0 10px;
+    border-left: none;
+    border-right: 1px solid black;
+    text-decoration: underline transparent;
+    transition: all 0.7s ease;
+    position: relative;
+    
+  }
+  
+  nav a:last-of-type {
+    padding-left: 15px;
+    border-right: none;
+  }
+  
+  nav a:last-of-type {
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 715px) {
+
+  .menuFlex {
+    flex-direction: column;
+  }
+
+  .topFlex {
+    margin: 0 auto;
+  }
+
+  .contactFlex {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 530px) {
+
+  main {
+    overflow-x: hidden
+  }
+
+  .navHide {
+    display: none;
+  }
+
+  .profileInformation p:nth-of-type(6) {
+    padding-top: 70px;
+  }
+
+  .viewMedia {
+    margin-top: 10px;
+  }
+
+  .contactFlex {
+    width: 100%;
+  }
+
+  .mediaHeader {
+    width: 340px;
+    padding: 30px 5px 30px 5px;
+    margin: 0 auto;
+  }
+
+  .contactMenu {
+    width: 340px;
+    margin: 10px auto;
+  }
+
+  .menu {
+    column-gap: 20px;
+  }
+
+  .urlContainer {
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  .rightSection {
+    width: 100%;
+  }
+
+  .rightSection h3 {
+    width: 100%;
+  }
+
+  .aboutMeSection {
+    width: 375px;
+  }
+
+  .aboutMe {
+    width: 375px;
+    padding: 0 20px 0 20px;
+  }
+
+  .topFriends {
+    width: 100%;
+  }
+
+  .topEight {
+    width: 100%;
+    gap: 15px 0;
+  }
+
+  .topEight img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .commentSection {
+    width: 100%;
+  }
+
+  .userCommentSection {
+    width: 100%;
+  }
+  
+  .firstDate {
+    width: 355px;
+  }
+
+  .date {
+    width: 355px;
+  }
+
+  .userComment {
+    width: 355px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
