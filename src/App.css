@@ -715,9 +715,9 @@ footer a {
 
 @media (max-width: 530px) {
 
-  main {
+  /* main {
     overflow-x: hidden
-  }
+  } */
 
   .navHide {
     display: none;
@@ -787,32 +787,43 @@ footer a {
   }
 
   .commentSection {
-    width: 100%;
-    margin-top: 20px;
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  .addButton {
+    margin-bottom: 10px;
+  }
+
+  .commentSection h3 {
+    width: 375px;
+    margin: 0 auto;
   }
 
   .userCommentSection {
-    width: 100%;
-  }
-  
-  .firstDate {
-    width: 355px;
-  }
-
-  .date {
-    width: 355px;
+    width: 375px;
+    margin: 0 auto;
   }
 
   .userComment {
     width: 355px;
+    margin: 0 auto;
   }
 
+  .firstDate {
+    width: 355px;
+    margin: 0 auto 10px auto;
+  }
+  
+
+  .date {
+    width: 355px;
+    margin: 0 auto;
+  }
+
+  
+
 }
-
-
-
-
-
 
 
 
